@@ -62,6 +62,7 @@
         
         if (!self.text || self.text.length > 0) {
             placeHolderLabel.alpha = 1;
+            placeHolderLabel.textColor = [UIColor whiteColor];
             self.attributedPlaceholder = nil;
         }
 //        else {
