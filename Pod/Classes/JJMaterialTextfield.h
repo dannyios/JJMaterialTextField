@@ -25,6 +25,12 @@
  */
 @property (nonatomic, strong, nullable) UIColor *lineColor;
 
+/**
+ * The color of placeholder when textfiled select
+ */
+
+@property (nonatomic, strong, nullable) UIColor *placeholderActiveColor;
+
 
 /**
  *  Shows an error - makes the line the error color.

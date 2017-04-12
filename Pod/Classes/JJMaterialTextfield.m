@@ -17,7 +17,7 @@
 @end
 
 @implementation JJMaterialTextfield
-@synthesize errorColor,lineColor;
+@synthesize errorColor,lineColor,placeholderActiveColor;
 
 #define DEFAULT_ALPHA_LINE 0.8
 
@@ -62,12 +62,9 @@
         
         if (!self.text || self.text.length > 0) {
             placeHolderLabel.alpha = 1;
-            placeHolderLabel.textColor = [UIColor whiteColor];
+            placeHolderLabel.textColor = placeholderActiveColor;
             self.attributedPlaceholder = nil;
         }
-//        else {
-//            self.attributedPlaceholder = nil;
-//        }
         
         CGFloat duration = 0.5;
         CGFloat delay = 0;
